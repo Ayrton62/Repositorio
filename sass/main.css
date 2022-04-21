@@ -1,0 +1,32 @@
+.encabezado nav ul li a {
+  text-decoration: none;
+  color: #f5f5dc;
+}
+
+.encabezado nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.encabezado nav .encabezado nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.encabezado nav .encabezado nav ul li {
+  margin: 0px 15px;
+}
+/*# sourceMappingURL=main.css.map */

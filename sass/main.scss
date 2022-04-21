@@ -1,0 +1,20 @@
+$beige: #f5f5dc;
+
+.encabezado nav ul li a {
+  text-decoration: none;
+  color: $beige;
+}
+.encabezado nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  .encabezado nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .encabezado nav ul li {
+    margin: 0px 15px;
+  }
+}
