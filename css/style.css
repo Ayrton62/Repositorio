@@ -28,12 +28,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-#titu {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  margin: 25px 0px;
-}
 .logomain {
   width: 100px;
   border-radius: 50%;
@@ -41,7 +35,6 @@ body {
 .encabezado {
   padding: 10px;
 }
-
 .carru {
   width: 65px;
   height: 75px;
@@ -51,24 +44,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.equipo {
-  width: 300px;
-  margin: 10px;
-}
-.mascara {
-  height: 225px;
-  width: 300px;
-  margin: 10px;
-}
-.logoN {
-  height: 225px;
-  width: 300px;
-  margin: 10px;
-}
-#galeria {
+.galeria {
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+.galeria img{
+  width: 30%;
+  margin: 1%;
 }
 .titu__temp {
   display: flex;
@@ -83,15 +66,18 @@ body {
   color: black;
 }
 .momentos {
-  width: 450px;
-  height: 320px;
+  width: 15%;
   margin-top: 15px;
   border: 4px solid rgb(73, 19, 22);
 }
-#gale__1 {
+.gale__1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
+}
+.gale__1 img{
+  width: 100%;
+  height: 100%;
 }
 .logofoot {
   width: 30px;
@@ -125,11 +111,11 @@ footer p {
 .trailer__titulo {
   margin-top: 20px;
 }
-#trailer {
+.trailer {
   justify-self: center;
   margin-bottom: 2em;
 }
-#granaltar {
+.granaltar {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row: 1fr;
@@ -192,12 +178,17 @@ footer p {
   display: none;
 }
 @media only screen and (max-width: 479px) {
-  #granaltar {
+  .granaltar {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
   }
   .altar .minifoto {
     border-radius: 5px solid white;
+  }
+  .gale__1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
   }
 }
 .capitulo__nombre {
@@ -210,19 +201,19 @@ footer p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.capitulo__foto {
+.capitulo__foto{
   display: flex;
   justify-content: space-around;
 }
-.fotocap {
-  width: 25em;
+.imag_txt{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 30%;
 }
-.capitulo__info {
-  display: flex;
-  justify-content: space-around;
-}
-.capitulo__info p {
-  justify-self: start;
+.fotocap{
+    width: 25em;
 }
 .divcar {
   display: flex;
