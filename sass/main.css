@@ -344,7 +344,8 @@ footer p {
 
 .capitulo__nombre h3 {
   color: #831d23;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+ "Lucida Sans", Arial, sans-serif;
 }
 
 .capitulo__foto {
