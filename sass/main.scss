@@ -46,7 +46,7 @@ a {
 }
 
 .encabezado ul li a:hover {
-  background-color: rgb(219, 219, 137);
+  background-color: map-get($colores-bg , mostaza-claro );
 }
 body {
   background: map-get($colores-bg, degrade-bordo);
@@ -82,18 +82,18 @@ body {
 }
 .momentos:hover{
   transform: scale(1.1);
-  border: 4px solid rgb(254, 201, 105);
+  border: 4px solid map-get($colores-bf, mostaza-oscuro);
 }
 .titu__temp {
   display: flex;
   justify-content: center;
-  background-color: rgb(254, 201, 105);
+  background-color: map-get($colores-bf, mostaza-oscuro);
   color: black;
 }
 .mejormomentos {
   display: flex;
   justify-content: center;
-  background-color: rgb(254, 201, 105);
+  background-color: map-get($colores-bf, mostaza-oscuro);
   color: black;
 }
 .momentos {
