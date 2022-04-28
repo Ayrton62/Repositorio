@@ -49,7 +49,7 @@ a {
   background-color: rgb(219, 219, 137);
 }
 body {
-  background: map-get($map: $colores-bg, $key: degrade-bordo);
+  background: map-get($colores-bg, degrade-bordo);
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
