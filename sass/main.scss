@@ -4,6 +4,10 @@ $colores-bg: (
   mostaza-oscuro: rgb(254, 201, 105),
   degrade-bordo: linear-gradient(to bottom, brown, rgb(73, 19, 22))
 );
+@mixin img_full {
+  width: 100%;
+  height: 100%;
+}
 .propiedades__footer{
   display: flex;
   justify-content: space-evenly;
@@ -119,8 +123,7 @@ body {
   justify-content: space-between;
 }
 .gale__1 img{
-  width: 100%;
-  height: 100%;
+  @include img_full;
 }
 .logofoot {
   width: 30px;
