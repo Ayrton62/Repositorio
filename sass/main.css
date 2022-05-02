@@ -1,3 +1,23 @@
+.propiedades__footer, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #831d23;
+  color: #dbdb89;
+  margin-top: 1em;
+  height: 2em;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
 .encabezado nav ul li a {
   text-decoration: none;
   color: #f5f5dc;
@@ -168,26 +188,6 @@ body {
   border-radius: 50%;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #831d23;
-  color: #dbdb89;
-  margin-top: 1em;
-  height: 2em;
-  padding: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-}
-
 footer p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -256,6 +256,22 @@ footer p {
           transform: scale(1.1);
 }
 
+.altar .fotomain {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 90%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 20%;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
 .contcap {
   display: -ms-grid;
   display: grid;
@@ -273,22 +289,6 @@ footer p {
 .contcap .capname {
   background-color: aliceblue;
   color: black;
-}
-
-.altar .fotomain {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  width: 90%;
-  height: auto;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  border-radius: 20%;
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
 }
 
 .cambiacara {
@@ -312,27 +312,6 @@ footer p {
   display: none;
 }
 
-@media only screen and (max-width: 479px) {
-  .granaltar {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (1fr)[8];
-        grid-template-rows: repeat(8, 1fr);
-  }
-  .altar .minifoto {
-    border-radius: 5px solid white;
-  }
-  .gale__1 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .capitulo__nombre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,16 +323,14 @@ footer p {
 
 .capitulo__nombre h3 {
   color: #831d23;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
- "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .capitulo__foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .imag_txt {
@@ -370,7 +347,7 @@ footer p {
           align-items: center;
   width: 30%;
   height: 70%;
-  font-size: smaller;
+  font-size: medium;
 }
 
 .fotocap {
@@ -394,4 +371,29 @@ footer p {
 
 .navbar-dark .navbar-nav .nav-link {
   color: goldenrod;
+}
+
+@media only screen and (max-width: 479px) {
+  .granaltar {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+  }
+  .altar .minifoto {
+    border-radius: 5px solid white;
+  }
+  .gale__1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .capitulo__foto {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }

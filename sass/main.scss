@@ -97,18 +97,18 @@ body {
 }
 .momentos:hover{
   transform: scale(1.1);
-  border: 4px solid map-get($colores-bf, mostaza-oscuro);
+  border: 4px solid map-get($colores-bg, mostaza-oscuro);
 }
 .titu__temp {
   display: flex;
   justify-content: center;
-  background-color: map-get($colores-bf, mostaza-oscuro);
+  background-color: map-get($colores-bg, mostaza-oscuro);
   color: black;
 }
 .mejormomentos {
   display: flex;
   justify-content: center;
-  background-color: map-get($colores-bf, mostaza-oscuro);
+  background-color: map-get($colores-bg, mostaza-oscuro);
   color: black;
 }
 .momentos {
