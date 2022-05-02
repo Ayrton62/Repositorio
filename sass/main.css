@@ -347,11 +347,15 @@ footer p {
           align-items: center;
   width: 30%;
   height: 70%;
-  font-size: medium;
+  font-size: larger;
 }
 
-.fotocap {
-  width: 100%;
+.capitulo__foto .fotocap {
+  width: 300%;
+}
+
+.capitulo__foto p {
+  width: 250%;
 }
 
 .divcar {
@@ -373,7 +377,7 @@ footer p {
   color: goldenrod;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 500px) {
   .granaltar {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -391,9 +395,5 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .capitulo__foto {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
   }
 }
