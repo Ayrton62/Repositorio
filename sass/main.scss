@@ -239,8 +239,8 @@ footer p {
     "Lucida Sans", Arial, sans-serif;
 }
 .capitulo__foto{
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .imag_txt{
     display: flex;
@@ -249,7 +249,7 @@ footer p {
     align-items: center;
     width: 30%;
     height: 70%;
-    font-size: smaller;
+    font-size: medium;
 }
 .fotocap{
     width: 100%;
