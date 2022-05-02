@@ -214,20 +214,6 @@ footer p {
 .cambiacara:hover img:first-child {
   display: none;
 }
-@media only screen and (max-width: 479px) {
-  .granaltar {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
-  .altar .minifoto {
-    border-radius: 5px solid white;
-  }
-  .gale__1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-  }
-}
 .capitulo__nombre {
   display: flex;
   background-color: aliceblue;
@@ -263,4 +249,21 @@ footer p {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: goldenrod;
+}
+@media only screen and (max-width: 479px) {
+  .granaltar {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .altar .minifoto {
+    border-radius: 5px solid white;
+  }
+  .gale__1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+  .capitulo__foto{
+    grid-template-columns: 1fr;
+  }
 }
