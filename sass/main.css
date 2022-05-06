@@ -1,3 +1,4 @@
+/* General */
 .propiedades__footer, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,7 +102,7 @@ body {
 .encabezado {
   padding: 10px;
 }
-
+/* Home */
 .carru {
   width: 65px;
   height: 75px;
@@ -329,7 +330,8 @@ footer p {
 
 .capitulo__nombre h3 {
   color: #831d23;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+ "Lucida Sans", Arial, sans-serif;
 }
 
 .capitulo__foto {
