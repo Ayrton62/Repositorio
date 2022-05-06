@@ -1,4 +1,3 @@
-/* General */
 .propiedades__footer, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,24 +101,11 @@ body {
 .encabezado {
   padding: 10px;
 }
-/* Home */
+
 .carru {
   width: 65px;
   height: 75px;
   margin: 0px 90px;
-}
-
-#titu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .galeria {
@@ -279,25 +265,6 @@ footer p {
   transition: 1s ease all;
 }
 
-.contcap {
-  display: -ms-grid;
-  display: grid;
-}
-
-.contcap .caps {
-  width: 500px;
-}
-
-.contcap .caps2 {
-  justify-self: flex-start;
-  width: 500px;
-}
-
-.contcap .capname {
-  background-color: aliceblue;
-  color: black;
-}
-
 .cambiacara {
   margin-bottom: 1.5rem;
 }
@@ -317,53 +284,6 @@ footer p {
 
 .cambiacara:hover img:first-child {
   display: none;
-}
-
-.capitulo__nombre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: aliceblue;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.capitulo__nombre h3 {
-  color: #831d23;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
- "Lucida Sans", Arial, sans-serif;
-}
-
-.capitulo__foto {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-.imag_txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  justify-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30%;
-  height: 70%;
-  font-size: larger;
-}
-
-.capitulo__foto .fotocap {
-  width: 300%;
-}
-
-.capitulo__foto p {
-  width: 250%;
 }
 
 .divcar {
@@ -510,4 +430,18 @@ ul {
   .contact-info h4, .contact-info ul, .contact-info p {
     text-align: left;
   }
+}
+
+.capitulo h3 {
+  background-color: aliceblue;
+  color: #831d23;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.fotocap {
+  width: 30%;
+}
+
+.fotocap .imag_txt p {
+  width: 400px;
 }

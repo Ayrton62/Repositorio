@@ -83,11 +83,6 @@ body {
   height: 75px;
   margin: (0px 90px);
 }
-#titu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .galeria {
   display: flex;
   justify-content: center;
@@ -188,20 +183,6 @@ footer p {
   border-radius: 20%;
   transition: 1s ease all;
 }
-.contcap {
-  display: grid;
-}
-.contcap .caps {
-  width: 500px;
-}
-.contcap .caps2 {
-  justify-self: flex-start;
-  width: 500px;
-}
-.contcap .capname {
-  background-color: aliceblue;
-  color: black;
-}
 .cambiacara {
   margin-bottom: 1.5rem;
 }
@@ -218,34 +199,7 @@ footer p {
 .cambiacara:hover img:first-child {
   display: none;
 }
-.capitulo__nombre {
-  display: flex;
-  background-color: aliceblue;
-  justify-content: space-around;
-}
-.capitulo__nombre h3 {
-  color: #831d23;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.capitulo__foto{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 .imag_txt{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
-    width: 30%;
-    height: 70%;
-    font-size: larger;
-}
-.capitulo__foto .fotocap{
-    width: 300%; 
-}
-.capitulo__foto p{
-  width: 250%;
 }
 .divcar {  
   margin: 0px 100px;
@@ -268,8 +222,6 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-  }
-  .capitulo__nombre{
   }
 }
 .contei {
@@ -375,4 +327,20 @@ ul {
   .contact-info p {
       text-align: left;
   }
+}
+.capitulo {
+  h3{
+    background-color: aliceblue;
+    color: #831d23;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+   "Lucida Sans", Arial, sans-serif;
+  }
+}
+ .fotocap{
+  width: 30%;
+ .imag_txt {
+   p{
+     width: 400px;
+   }
+ }
 }
