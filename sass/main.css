@@ -1,3 +1,4 @@
+/* General */
 .propiedades__footer, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,10 +9,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #831d23;
-  color: #dbdb89;
+  background-color: #000;
+  color: #7207ff;
   margin-top: 1em;
-  height: 2em;
+  height: 3em;
   padding: 20px;
   position: -webkit-sticky;
   position: sticky;
@@ -102,10 +103,43 @@ body {
   padding: 10px;
 }
 
+/* Home */
 .carru {
   width: 65px;
   height: 75px;
   margin: 0px 90px;
+}
+
+.fotohome {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+}
+
+.fotohome img {
+  width: 75%;
+  height: 100%;
+}
+
+.trailer {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 2em;
+}
+
+/* Galeria */
+.titu__temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fec969;
+  color: black;
 }
 
 .galeria {
@@ -131,15 +165,12 @@ body {
   border: 4px solid #fec969;
 }
 
-.titu__temp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #fec969;
-  color: black;
+.momentos {
+  width: 15%;
+  margin-top: 15px;
+  border: 4px solid #491316;
+  -webkit-transition: 0.38s ease all;
+  transition: 0.38s ease all;
 }
 
 .mejormomentos {
@@ -151,14 +182,6 @@ body {
           justify-content: center;
   background-color: #fec969;
   color: black;
-}
-
-.momentos {
-  width: 15%;
-  margin-top: 15px;
-  border: 4px solid #491316;
-  -webkit-transition: 0.38s ease all;
-  transition: 0.38s ease all;
 }
 
 .gale__1 {
@@ -176,41 +199,22 @@ body {
   height: 100%;
 }
 
-.logofoot {
-  width: 30px;
-  border-radius: 50%;
+/* Capitulos */
+.capitulo h3 {
+  background-color: aliceblue;
+  color: #831d23;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-footer p {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+.capitulo .imag_txt {
+  width: 30%;
 }
 
-.fotohome {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+.capitulo .fotocap {
   width: 100%;
-  justify-items: center;
 }
 
-.fotohome img {
-  width: 75%;
-  height: 100%;
-}
-
-.trailer__titulo {
-  margin-top: 20px;
-}
-
-.trailer {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-bottom: 2em;
-}
-
+/* Elenco */
 .granaltar {
   display: -ms-grid;
   display: grid;
@@ -240,13 +244,13 @@ footer p {
 }
 
 .altar .minifoto:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 .altar .fotomain:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .altar .fotomain {
@@ -260,9 +264,20 @@ footer p {
   height: auto;
   -ms-grid-column-align: center;
       justify-self: center;
-  border-radius: 20%;
+  border-radius: 15%;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
+}
+
+.logofoot {
+  width: 30px;
+  border-radius: 50%;
+}
+
+footer p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cambiacara {
@@ -300,7 +315,7 @@ footer p {
   color: goldenrod;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   .granaltar {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -415,9 +430,6 @@ ul {
 }
 
 @media (min-width: 700px) {
-  body {
-    padding: 0 4em;
-  }
   .contact-wrapper {
     display: -ms-grid;
     display: grid;
@@ -432,16 +444,73 @@ ul {
   }
 }
 
-.capitulo h3 {
-  background-color: aliceblue;
-  color: #831d23;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.fotocap {
-  width: 30%;
+.main {
+  width: 100%;
+  height: 100vh;
 }
 
-.fotocap .imag_txt p {
-  width: 400px;
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 170px;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.icon:nth-child(1):hover {
+  -webkit-box-shadow: 0px 0px 20px #0E34A0;
+          box-shadow: 0px 0px 20px #0E34A0;
+}
+
+.icon:nth-child(2):hover {
+  -webkit-box-shadow: 0px 0px 20px #750D37;
+          box-shadow: 0px 0px 20px #750D37;
+}
+
+.icon:nth-child(3):hover {
+  -webkit-box-shadow: 0px 0px 20px #04F06A;
+          box-shadow: 0px 0px 20px #04F06A;
+}
+
+.icon:nth-child(4):hover {
+  -webkit-box-shadow: 0px 0px 20px #9AC4F8;
+          box-shadow: 0px 0px 20px #9AC4F8;
+}
+
+.fa-facebook-f {
+  color: #0E34A0;
+  -webkit-filter: drop-shadow(0px 0px 10px #0E34A0);
+          filter: drop-shadow(0px 0px 10px #0E34A0);
+}
+
+.fa-instagram {
+  color: #750D37;
+  -webkit-filter: drop-shadow(0px 0px 10px #750D37);
+          filter: drop-shadow(0px 0px 10px #750D37);
+}
+
+.fa-whatsapp {
+  color: #04F06A;
+  -webkit-filter: drop-shadow(0px 0px 10px #04F06A);
+          filter: drop-shadow(0px 0px 10px #04F06A);
+}
+
+.fa-twitter {
+  color: #9AC4F8;
+  -webkit-filter: drop-shadow(0px 0px 10px #9AC4F8);
+          filter: drop-shadow(0px 0px 10px #9AC4F8);
 }
