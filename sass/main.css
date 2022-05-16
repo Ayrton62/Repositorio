@@ -200,17 +200,27 @@ body {
 }
 
 /* Capitulos */
-.capitulo h3 {
+.capaltar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.capaltar .capitulo h3 {
   background-color: aliceblue;
   color: #831d23;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.capitulo .imag_txt {
-  width: 30%;
+.capaltar .capitulo .imag_txt {
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.capitulo .fotocap {
+.capaltar .capitulo .fotocap {
   width: 100%;
 }
 
@@ -274,10 +284,22 @@ body {
   border-radius: 50%;
 }
 
+footer {
+  padding: 20px;
+}
+
 footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+footer i {
+  font-size: 1.8rem;
+}
+
+footer i:hover {
+  color: #831d23;
 }
 
 .cambiacara {
@@ -313,6 +335,9 @@ footer p {
 
 .navbar-dark .navbar-nav .nav-link {
   color: goldenrod;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0px 15px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -334,6 +359,10 @@ footer p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .contei {
@@ -354,7 +383,7 @@ ul {
 }
 
 .logoregist span {
-  color: #B70E21;
+  color: #b70e21;
 }
 
 .contact-wrapper {
@@ -396,7 +425,7 @@ ul {
 .contact-form form input,
 .contact-form form textarea {
   width: 100%;
-  padding: .7em;
+  padding: 0.7em;
   border: none;
   background: none;
   outline: 0;
@@ -405,7 +434,7 @@ ul {
 }
 
 .contact-form form button {
-  background: #B70E21;
+  background: #b70e21;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -424,7 +453,9 @@ ul {
   background: #000;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
 }
@@ -439,7 +470,9 @@ ul {
   .contact-wrapper > * {
     padding: 2em;
   }
-  .contact-info h4, .contact-info ul, .contact-info p {
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
     text-align: left;
   }
 }
@@ -472,45 +505,45 @@ ul {
 }
 
 .icon:nth-child(1):hover {
-  -webkit-box-shadow: 0px 0px 20px #0E34A0;
-          box-shadow: 0px 0px 20px #0E34A0;
+  -webkit-box-shadow: 0px 0px 20px #1d4ac7;
+          box-shadow: 0px 0px 20px #1d4ac7;
 }
 
 .icon:nth-child(2):hover {
-  -webkit-box-shadow: 0px 0px 20px #750D37;
-          box-shadow: 0px 0px 20px #750D37;
+  -webkit-box-shadow: 0px 0px 20px #750d37;
+          box-shadow: 0px 0px 20px #750d37;
 }
 
 .icon:nth-child(3):hover {
-  -webkit-box-shadow: 0px 0px 20px #04F06A;
-          box-shadow: 0px 0px 20px #04F06A;
+  -webkit-box-shadow: 0px 0px 20px #04f06a;
+          box-shadow: 0px 0px 20px #04f06a;
 }
 
 .icon:nth-child(4):hover {
-  -webkit-box-shadow: 0px 0px 20px #9AC4F8;
-          box-shadow: 0px 0px 20px #9AC4F8;
+  -webkit-box-shadow: 0px 0px 20px #9ac4f8;
+          box-shadow: 0px 0px 20px #9ac4f8;
 }
 
 .fa-facebook-f {
-  color: #0E34A0;
-  -webkit-filter: drop-shadow(0px 0px 10px #0E34A0);
-          filter: drop-shadow(0px 0px 10px #0E34A0);
+  color: #1d4ac7;
+  -webkit-filter: drop-shadow(0px 0px 10px #1d4ac7);
+          filter: drop-shadow(0px 0px 10px #1d4ac7);
 }
 
 .fa-instagram {
-  color: #750D37;
-  -webkit-filter: drop-shadow(0px 0px 10px #750D37);
-          filter: drop-shadow(0px 0px 10px #750D37);
+  color: #750d37;
+  -webkit-filter: drop-shadow(0px 0px 10px #750d37);
+          filter: drop-shadow(0px 0px 10px #750d37);
 }
 
 .fa-whatsapp {
-  color: #04F06A;
-  -webkit-filter: drop-shadow(0px 0px 10px #04F06A);
-          filter: drop-shadow(0px 0px 10px #04F06A);
+  color: #04f06a;
+  -webkit-filter: drop-shadow(0px 0px 10px #04f06a);
+          filter: drop-shadow(0px 0px 10px #04f06a);
 }
 
 .fa-twitter {
-  color: #9AC4F8;
-  -webkit-filter: drop-shadow(0px 0px 10px #9AC4F8);
-          filter: drop-shadow(0px 0px 10px #9AC4F8);
+  color: #9ac4f8;
+  -webkit-filter: drop-shadow(0px 0px 10px #9ac4f8);
+          filter: drop-shadow(0px 0px 10px #9ac4f8);
 }
