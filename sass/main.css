@@ -10,10 +10,6 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #000;
-  color: #7207ff;
-  margin-top: 1em;
-  height: 3em;
-  padding: 20px;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
@@ -86,8 +82,8 @@ a {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(brown), to(#491316));
-  background: linear-gradient(to bottom, brown, #491316);
+  background: -webkit-gradient(linear, left top, left bottom, from(#491316), to(#000));
+  background: linear-gradient(to bottom, #491316, #000);
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 1fr auto;
@@ -300,13 +296,9 @@ body {
   transition: 1s ease all;
 }
 
-footer {
-  padding: 20px;
-}
-
 footer i {
   font-size: 1.8rem;
-  margin: 20px;
+  margin: 5px;
   width: auto;
   height: auto;
   cursor: pointer;
@@ -348,8 +340,13 @@ footer i:nth-child(4):hover {
 }
 
 .cambiacara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1.5rem;
-  justify-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cambiacara img {
@@ -553,55 +550,98 @@ ul {
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
-  margin: 170px;
   cursor: pointer;
-  border-radius: 50px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .icon:nth-child(1):hover {
-  -webkit-box-shadow: 0px 0px 20px #0086f3;
-          box-shadow: 0px 0px 20px #0086f3;
+  -webkit-box-shadow: 0px 0px 10px #0086f3;
+          box-shadow: 0px 0px 10px #0086f3;
 }
 
 .icon:nth-child(2):hover {
-  -webkit-box-shadow: 0px 0px 20px #d103a4;
-          box-shadow: 0px 0px 20px #d103a4;
+  -webkit-box-shadow: 0px 0px 10px #d103a4;
+          box-shadow: 0px 0px 10px #d103a4;
 }
 
 .icon:nth-child(3):hover {
-  -webkit-box-shadow: 0px 0px 20px #04f06a;
-          box-shadow: 0px 0px 20px #04f06a;
+  -webkit-box-shadow: 0px 0px 10px #04f06a;
+          box-shadow: 0px 0px 10px #04f06a;
 }
 
 .icon:nth-child(4):hover {
-  -webkit-box-shadow: 0px 0px 20px #9ac4f8;
-          box-shadow: 0px 0px 20px #9ac4f8;
+  -webkit-box-shadow: 0px 0px 10px #9ac4f8;
+          box-shadow: 0px 0px 10px #9ac4f8;
 }
 
 .fa-facebook-f {
   color: #1d4ac7;
-  -webkit-filter: drop-shadow(0px 0px 10px #0086f3);
-          filter: drop-shadow(0px 0px 10px #0086f3);
+  -webkit-filter: drop-shadow(0px 0px 5px #0086f3);
+          filter: drop-shadow(0px 0px 5px #0086f3);
 }
 
 .fa-instagram {
   color: #750d37;
-  -webkit-filter: drop-shadow(0px 0px 10px #d103a4);
-          filter: drop-shadow(0px 0px 10px #d103a4);
+  -webkit-filter: drop-shadow(0px 0px 5px #d103a4);
+          filter: drop-shadow(0px 0px 5px #d103a4);
 }
 
 .fa-whatsapp {
   color: #04f06a;
-  -webkit-filter: drop-shadow(0px 0px 10px #04f06a);
-          filter: drop-shadow(0px 0px 10px #04f06a);
+  -webkit-filter: drop-shadow(0px 0px 5px #04f06a);
+          filter: drop-shadow(0px 0px 5px #04f06a);
 }
 
 .fa-twitter {
   color: #9ac4f8;
-  -webkit-filter: drop-shadow(0px 0px 10px #9ac4f8);
-          filter: drop-shadow(0px 0px 10px #9ac4f8);
+  -webkit-filter: drop-shadow(0px 0px 5px #9ac4f8);
+          filter: drop-shadow(0px 0px 5px #9ac4f8);
+}
+
+footer a {
+  color: auto;
+}
+
+footer i {
+  font-size: 1.8rem;
+  margin: 5px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+footer i:nth-child(1):hover {
+  -webkit-box-shadow: 0px 0px 0px #3a58ac;
+          box-shadow: 0px 0px 0px #3a58ac;
+  -webkit-filter: drop-shadow(10px 10px 30px #0E34A0);
+          filter: drop-shadow(10px 10px 30px #0E34A0);
+  color: #0E34A0;
+}
+
+footer i:nth-child(2):hover {
+  -webkit-box-shadow: 0px 0px 0px #d45b8c;
+          box-shadow: 0px 0px 0px #d45b8c;
+  -webkit-filter: drop-shadow(10px 10px 30px #bd4e7a);
+          filter: drop-shadow(10px 10px 30px #bd4e7a);
+  color: #750D37;
+}
+
+footer i:nth-child(3):hover {
+  -webkit-box-shadow: 0px 0px 0px #41ec8b;
+          box-shadow: 0px 0px 0px #41ec8b;
+  -webkit-filter: drop-shadow(10px 10px 30px #41f790);
+          filter: drop-shadow(10px 10px 30px #41f790);
+  color: #04F06A;
+}
+
+footer i:nth-child(4):hover {
+  -webkit-box-shadow: 0px 0px 0px #5aa0f5;
+          box-shadow: 0px 0px 0px #5aa0f5;
+  -webkit-filter: drop-shadow(10px 10px 30px #5aa0f5);
+          filter: drop-shadow(10px 10px 30px #5aa0f5);
+  color: #9AC4F8;
 }
