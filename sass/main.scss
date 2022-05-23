@@ -231,9 +231,7 @@ body {
 .altar .minifoto:hover {
   transform: scale(1.09);
 }
-.altar .fotomain:hover {
-  transform: scale(1.04);
-}
+
 .altar .fotomain {
   grid-column: 1/4;
   grid-row: 1/2;
@@ -242,6 +240,9 @@ body {
   justify-self: center;
   border-radius: 15%;
   transition: 0.8s ease all;
+}
+.altar .fotomain:hover {
+  transform: scale(1.04);
 }
 
 footer {

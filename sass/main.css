@@ -329,11 +329,6 @@ body {
           transform: scale(1.09);
 }
 
-.altar .fotomain:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-}
-
 .altar .fotomain {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -348,6 +343,11 @@ body {
   border-radius: 15%;
   -webkit-transition: 0.8s ease all;
   transition: 0.8s ease all;
+}
+
+.altar .fotomain:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .cambiacara {
